@@ -1,0 +1,641 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    transition: .4s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+    list-style-position: inside;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1D4A8B;
+    padding: 20px;
+    position: fixed;
+    box-shadow: 0px 10px 20px #0000006e;
+}
+
+header img {
+    height: 80px;
+    cursor: pointer;
+}
+
+header .menu {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+header .menu a {
+    color: #eee;
+    font-weight: 300;
+    padding: 20px;
+}
+
+header a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+header i {
+    color: #eee;
+    font-size: 2em;
+    padding: 20px;
+    cursor: pointer;
+}
+
+header #hamburger-menu {
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    z-index: 999;
+} 
+
+header #hamburger-menu i {
+    color: #fff;
+}
+
+.hamburger-menu {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1D4A8B;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hamburger-menu a {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    padding: 55px;
+    border-bottom: 2px solid #fff;
+}
+
+.hamburger-menu a:first-child {
+    border-top: 2px solid #fff;
+}
+
+/* SECTION: HOME */
+
+section#home {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/fundo-home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#home .home-text-container {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section#home .home-text-container h2 {
+    font-weight: 500;
+    background-color: #fff;
+    color: #1D4A8B;
+    padding: 5px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 20px #0000006e;
+}
+
+section#home .home-text-container p {
+    color: #fff;
+    font-weight: 300;
+}
+
+/* SECTION: ABOUT */
+
+section#about {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF8EE;
+    padding: 20px;
+}
+
+section#about .about-text-container {
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #0000006e;
+    text-align: center;
+}
+
+section#about .about-text-container h2 {
+    color: #1D4A8B;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+section#about .about-text-container p {
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+section#about .about-text-container .about-list {
+    list-style: '✔️';
+    list-style-position: inside;
+    columns: 2;
+    font-weight: 300;
+}
+
+/* SECTION: COURSES */
+
+section#courses {
+    width: 100%;
+    background-color: #FFF8EE;
+    padding: 10% 20px 5% 20px;
+    /*
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    */
+}
+
+section#courses .courses-questions h2 {
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50px;
+    color: #1D4A8B;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0px 0px 20px #0000006e;
+}
+
+section#courses .courses-questions .courses-questions-list {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+section#courses .courses-questions .courses-questions-list li {
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #0000006e;
+    text-align: center;
+    overflow: hidden;
+}
+
+section#courses .courses-questions .courses-questions-list li h3 {
+    background-color: #1D4A8B;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    margin: -20px -20px 0 -20px;
+    padding: 5px;
+}
+
+section#courses .courses-questions .courses-questions-list li p {
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+section#courses .courses-questions .courses-questions-list li p a {
+    color: #1D4A8B;
+    text-decoration: underline;
+}
+
+section#courses .courses-modulos h2 {
+    display: block;
+    margin: 40px auto 20px auto;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50px;
+    color: #1D4A8B;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0px 0px 20px #0000006e;
+}
+
+section#courses .courses-modulos .courses-modulos-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+section#courses .courses-modulos .courses-modulos-list li {
+    background-color: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #0000006e;
+    text-align: center;
+}
+
+section#courses .courses-modulos .courses-modulos-list li h3 {
+    font-weight: 500;
+    color: #1D4A8B;
+    margin: 5% 0;
+}
+
+section#courses .courses-modulos .courses-modulos-list li img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+section#courses .courses-modulos .courses-modulos-list li button {
+    width: 100%;
+    background-color: #1D4A8B;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    padding: 10px;
+    cursor: pointer;
+}
+
+section#courses .courses-modulos .courses-modulos-list li button:hover {
+    background-color: #1d4b8bd7;
+}
+
+section#courses .course-prices h2 { 
+    display: block;
+    margin: 40px auto 20px auto;
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50px;
+    color: #1D4A8B;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 0px 0px 20px #0000006e;
+}
+
+section#courses .course-prices .course-prices-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+section#courses .course-prices .course-prices-list li {
+    max-width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #0000006e;
+    text-align: center;
+    overflow: hidden;
+}
+
+section#courses .course-prices .course-prices-list li h3 {
+    background-color: #1D4A8B;
+    color: #fff;
+    margin: -20px -20px 0 -20px;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    padding: 5px;
+}
+
+section#courses .course-prices .course-prices-list li p {
+    font-weight: 300;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+section#courses .course-prices .course-prices-list li .prices {
+    color: #1D4A8B;
+    text-align: center;
+}
+
+section#courses .course-prices .course-prices-list li .prices strong {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #1D4A8B;
+}
+
+section#courses .course-prices .course-prices-list li button {
+    margin:  -10px auto;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fff;
+    color: #1D4A8B;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+section#courses .course-prices .course-prices-list li button:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #1D4A8B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 300;
+}
+
+footer .footer-container {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+footer .footer-container img {
+    height: 130px;
+    cursor: pointer;
+}
+
+footer .footer-container .footer-list li {
+    font-weight: 300;
+    padding: 5px;
+}
+
+footer .footer-container .footer-list li a {
+    color: #fff;
+}
+
+footer .footer-container .footer-list li a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    text-align: center;
+}
+
+/*Modal Certificado*/
+
+.modal-certificado {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal-fade-certificado {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00000050;
+    height: 100vh;
+    width: 100%;
+}
+
+.modal-certificado img {
+    width: 50%;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+/*Modal Cards*/
+
+.modal-card {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal-fade-card {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00000050;
+    height: 100vh;
+    width: 100%;
+}
+
+.card {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.card h2 {
+    color: #1D4A8B;
+}
+
+.card p {
+    font-weight: 300;
+    color: #000;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/*Login*/
+
+.modal-login {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.modal-fade-login {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00000050;
+    height: 100vh;
+    width: 100%;
+}
+
+.login {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.login form {
+    width: 100%;
+}
+
+.login form fieldset {
+    padding: 20px;
+    text-align: center;
+    border: 2px solid #1D4A8B;
+    border-radius: 10px;
+}
+
+.login form fieldset legend {
+    font-size: 3em;
+    color: #1D4A8B;
+    padding: 0 10px;
+}
+
+.login form fieldset h2 {
+    font-size: 2em;
+    color: #1D4A8B;
+    font-weight: 300;
+}
+
+.login form fieldset .input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.login form fieldset .input-container label i {
+    color: #1D4A8B;
+    font-size: 1.5em;
+}
+
+.login form fieldset .input-container input {
+    width: 90%;
+    height: 40px;
+    border: 1px solid #1D4A8B;
+    border-radius: 5px;
+    padding: 10px;
+    color: #1D4A8B;
+}
+
+
+.login form fieldset .input-container input::placeholder {
+    color: #1D4A8B;
+    font-weight: 300;
+}
+
+.input-container-select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.input-container-select h3 {
+    color: #1D4A8B;
+    font-weight: 300;
+}
+
+.input-container-select select {
+    font-weight: 400;
+    color: #1D4A8B;
+    border: 1px solid #1D4A8B;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.login form fieldset button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #fff;
+    background-color: #1D4A8B;
+    border: 2px solid #1D4A8B;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.login form fieldset button:hover {
+    background-color: #fff;
+    color: #1D4A8B;
+}
+
+.login form fieldset p {
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+.login form fieldset p strong {
+    color: #1D4A8B;
+    text-decoration: underline;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/*Hide*/
+
+.hide {
+    display: none;
+}

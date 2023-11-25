@@ -1,0 +1,125 @@
+@media (max-width: 787px) {
+    header {
+        padding: 10px;
+    }
+    
+    header .menu {
+        display: none;
+    }
+
+    header img {
+        height: 60px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+    }
+
+    header #hamburger-menu {
+        display: block;
+    }
+
+    section#home {
+        padding: 10% 0;
+    }
+
+    section#home .home-text-container {
+        width: 80%;
+    }
+
+    section#home .home-text-container h2 {
+        font-size: 1.3em;
+        border-radius: 10px;
+    }
+
+    section#home .home-text-container p {
+        font-size: .8em;
+    }
+
+    footer .footer-container {
+        width: 80%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .footer-container .footer-list li a {
+        font-size: .9em;
+    }
+}
+
+@media (max-width: 660px) {
+    section#about .about-text-container {
+        width: 90%;
+    }
+    
+    section#about .about-text-container .about-list {
+        columns: 1;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1095px) {
+    .modal-certificado img {
+        width: 80%;
+    }
+
+    .login {
+        width: 60%;
+    }
+}
+
+@media (max-width: 605px) {
+    .login {
+        font-size: .9em;
+    }
+
+    .login form fieldset .input-container input {
+        width: 80%;
+    }
+
+    .input-container-select {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 456px) {
+    .login {
+        width: 80%;
+    }
+
+    .login form fieldset h2 {
+        font-size: 1.5em;
+    }
+
+    .login form fieldset .input-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .login form fieldset .input-container label i {
+        display: none;
+    }
+
+    .login form fieldset .input-container input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 875px) {
+
+    
+    .card h2 {
+        font-size: 1.3em;
+    }
+
+    .card p {
+        font-size: .8em;
+    }
+
+
+}
