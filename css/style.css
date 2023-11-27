@@ -82,7 +82,7 @@ header #hamburger-menu i {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #1D4A8B;
+    background-image: linear-gradient(to bottom, #1D4A8B, #5C91DB);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
